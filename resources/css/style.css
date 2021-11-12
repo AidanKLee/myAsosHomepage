@@ -23,6 +23,55 @@ body {
 
 }
 
+section {
+
+    width: 100%;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    line-height: 1.2;
+
+}
+
+h1 {
+
+    font-size: 3.81rem;
+
+}
+
+h2 {
+
+    font-size: 3.05rem;
+
+}
+
+h3 {
+
+    font-size: 2.44rem;
+
+}
+
+h4 {
+
+    font-size: 1.95rem;
+
+}
+
+h5 {
+
+    font-size: 1.56rem;
+
+}
+
+h6 {
+
+    font-size: 1.25rem;
+
+}
+
+
 /* Header and Navigation */
 
 header {
@@ -254,6 +303,146 @@ header nav li a:hover svg {
 
 }
 
+
+/* Main Section */
+
+/* Sale Section */
+
+#sale {
+
+    background-color: #eaddf0;
+
+}
+
+#saleTabs {
+
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#sale article div {
+
+    width: 50%;
+    flex: 1 1 50%;
+    padding: 8px;
+
+}
+
+#sale article div div {
+
+    max-width: 770px;
+
+}
+
+#saleBanner {
+
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+
+}
+
+/* Coats Section */
+
+#styles1 {
+
+    width: 100%;
+    padding: 24px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#topImg {
+
+    max-width: 1280px;
+    object-fit: cover;
+
+}
+
+#styles1 a {
+
+    color: #f1f1f1;
+    text-decoration: none;
+    display: block;
+
+}
+
+#styles1 h5 {
+
+    display: block;
+    position: relative;
+    top: -175px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* Style Classes */
+
+.darkBg {
+
+    background-color: #141414;
+    color: #f1f1f1;
+
+}
+
+.flexStart {
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.flexEnd {
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.italic {
+
+    font-style: italic;
+
+}
+
+.letterSpacing {
+
+    letter-spacing: 16px;
+
+}
+
+.letterSpacing2 {
+
+    letter-spacing: 4px;
+
+}
+
+.textCentre {
+
+    text-align: center;
+
+}
+
+.smallPrint {
+
+    padding-top: 16px;
+    font-size: 0.75rem;
+
+}
+
+
 @media only screen and (max-width: 900px) {
 
     .desktopLinks {
@@ -274,10 +463,29 @@ header nav li a:hover svg {
 
     }
 
+    #styles1 {
+
+        padding: 0;
+
+    }
+
+    #topImg {
+
+        max-width: 140%;
+        object-fit: cover;
+    
+    }
+
 }
 
 @media only screen and (max-width: 735px) {
 
+    html {
+
+        font-size: 12px;
+
+    }
+   
     header {
 
         height: 48px;
@@ -311,6 +519,12 @@ header nav li a:hover svg {
     .mobileLinks {
 
         display: flex;
+
+    }
+
+    #saleTabs {
+
+        display: none;
 
     }
 
