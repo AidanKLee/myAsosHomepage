@@ -310,6 +310,59 @@ header nav li a:hover svg {
 
 }
 
+#mobileSearchSection {
+
+    background-color: #404040;
+    padding: 4px 0;
+    display: block;
+    position: absolute;
+    top: -42px;
+
+}
+
+#mobileSearchSection form {
+
+    background-color: #f1f1f1;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    border-radius: 50px;
+    padding: 1px 12px;
+    margin: 0 12px;
+
+}
+
+#mobileSearchSection input {
+
+    height: 32px;
+    background-color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-right: 8px;
+    flex: 1 1 100%;
+
+}
+
+#mobileSearchSection input:focus {
+
+    border: 0px none transparent;
+    outline: 0px none transparent;
+
+}
+
+#mobileSearchSection button {
+
+    background-color: transparent;
+
+}
+
+#mobileSearchSection button svg {
+
+    fill: #1f1f1f;
+    margin: 0;
+
+}
+
 
 /* Main Section */
 
@@ -971,6 +1024,18 @@ header nav li a:hover svg {
         text-align: center;
         width: 90%;
         /* margin: 0; */
+
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 734px) {
+
+    #mobileSearchSection {
+
+        display: none;
 
     }
 
