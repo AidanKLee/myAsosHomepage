@@ -205,10 +205,10 @@ header svg {
     top: 64px;
     transform: translateX(-60%);
     width: 225px;
-    background-color: rgba(237, 237, 237, .75);
+    background-color: rgba(237, 237, 237, .9);
     list-style-type: none;
     position: absolute;
-    border: 2px solid rgba(31, 31, 31, .75);
+    border: 2px solid rgba(31, 31, 31, .9);
     border-top: none;
     display: none;
 
@@ -401,19 +401,20 @@ header nav li a:hover svg {
 
 }
 
-#topImgBtn {
+.topImgBtn {
 
-    width: 150px;
+    max-width: 150px;
     margin: 16px auto;
     display: block;
     background-color: #1f1f1f;
     border: 2px solid #f1f1f1;
     padding: 8px;
     transition: .5s;
+    color: #f1f1f1;
 
 }
 
-#topImgBtn:hover {
+.topImgBtn:hover {
 
     color:#1f1f1f;
     background-color: #f1f1f1;
@@ -435,7 +436,6 @@ header nav li a:hover svg {
 
     max-width: 1440px;
     margin: 32px auto;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,15 +445,20 @@ header nav li a:hover svg {
 
 .styleImages {
 
-    flex: 0 1 320px;  
-    max-width: 320px;
-    overflow: hidden;
+    max-width: 22%;
+    min-width: 144px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 8px;
     text-align: center;
+
+}
+
+.styleImages p {
+
+    height: 32px;
 
 }
 
@@ -465,29 +470,363 @@ header nav li a:hover svg {
 
 .styleImages img {
 
-    max-height: 475px;
-    object-fit: cover;
-    overflow: hidden;
+    max-width: 100%;
+    object-fit: contain;
     display: block;
 
 }
 
 
+/* Sale 2 Section */
+
 #sale2 {
 
+    width: 100%;
+    background-color: #d1507d;
+    padding: 24px;
+    margin: 0 0 32px 0;
+    text-align: center;
+
+}
+
+#sale2 h4 {
+
+    transition: 1s;
+
+}
+
+#sale2 h4:hover {
+
+    transform: scale(1.3);
+
+}
+
+
+/* Styles 3 Section */
+
+#styles3 {
+
+    width: 100%;
+    background-color: #c5fa4a;
+    margin: 32px 0;
+
+}
+
+#styles3 article {
+
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+#styles3 figure {
+
+    width: 50%;
+    padding: 32px 8px;
+    text-align: center;
+
+}
+
+#styles3 img {
+
+    width: 100%;
+    display: block;
+    padding-bottom: 8px;
+
+}
+
+#styles3 p {
+
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* Popular Brands Section */
+
+#popularBrands {
+
+    width: 100%;
+    background-color: #1f1f1f;
+    margin: 64px 0;
+
+}
+
+#popularBrands article {
+
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+
+}
+
+#popularBrands a {
+
+    display: block;
+    width: 25%;
+    min-width: 144px;
+
+}
+
+#popularBrands img {
+
+    width: 100%;
+    padding: 20%;
+    display: block;
+    margin: auto;
+
+}
+
+
+/* paypal Section */
+
+#paypal {
+
+    background-image: url(../images/paypalbg.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+#paypal article {
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 0;
+
+}
+
+#paypal h2, #paypal h5 {
+
+    color: #f1f1f1;
+
+}
+
+#paypal img {
+
+    max-width: 100%;
+    max-height: 100px;
+    min-height: 60px;
+    display: block;
+    margin: 0 auto 16px;
+    padding: 16px;
+    object-fit: cover;
+
+}
+
+
+/* Join Us Section */
+
+#joinUs {
+
+    width: 100%;
+    
+}
+
+#joinUs article {
+
+    max-width: 1440px;
+    text-align: center;
+    padding: 96px 16px;
+    margin: 0 auto;
+
+
+}
+
+.joinUsBtn {
+
+    max-width: 250px;
+    margin: 16px auto 0;
+    display: block;
+    background-color: #1f1f1f;
+    border: 2px solid #1f1f1f;
+    padding: 8px;
+    transition: .5s;
+    color: #f1f1f1;
+    font-size: 12px;
+
+}
+
+.joinUsBtn:hover {
+
+    color:#1f1f1f;
+    background-color: #f1f1f1;
+    border: 2px solid #1f1f1f;
+    transform: scale(1.3);
+    font-weight: bold;
+
+}
+
+
+/* Footer */
+
+#socialsPartners {
+
+    width: 100%;
+    background-color: #303030;
+
+}
+
+#socialsPartners article {
+
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex: 1 0;
+    padding: 16px 0;
+
+}
+
+#socialsPartners a {
+
+    display: inline-block;
+
+}
+
+#socialsPartners div {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.icon {
+
+    height: 24px;
+    width: auto;
+    margin: 0 8px;
+    fill:rgba(237, 237, 237, 1);
+    transition: .5s;
+
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+#line {
+
+    border: 1px solid #f1f1f1;
+    margin: 0 32px;
+
+}
+
+#siteMap {
+
+    width:100%;
+    background-color: #eeeeee;
+
+}
+
+#siteMap h6 {
+
+    font-size: 1.1rem;
+
+}
+
+#siteMap p {
+
+    padding: 4px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+
+}
+
+#siteMap article {
+
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#siteMap article div {
+
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+
+.grow {
+
+    flex-grow: 1;
+
+}
+
+#siteMap article ul {
+
+    list-style-type: none;
+
+}
+
+#countrySelect {
+
+    width: 25%;
+
+}
+
+.listHeader {
+
+    padding: 8px 0;
+
+}
+
+.countryLink:hover {
+
+    color: #2f3679;
+
+}
+
+#country {
+
+    height: .8rem;
+    margin: 0 4px;
+    border-radius: 50px;
+
+}
+
+#footer {
+
+    background-color: #afafaf;
     width: 100%;
 
 }
 
+#footer article {
 
-/* Clothes Section */
-
-#clothes {
-
-    background-color: #404040;
-    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0px auto;
 
 }
+
+#footer div {
+
+    padding: 0 8px;
+
+}
+
+#footer p {
+
+    padding: 12px 0;
+
+}
+
 
 /* Style Classes */
 
@@ -555,6 +894,12 @@ header nav li a:hover svg {
 
 }
 
+.circle {
+
+    border-radius: 50px;
+
+}
+
 
 @media only screen and (max-width: 900px) {
 
@@ -587,6 +932,46 @@ header nav li a:hover svg {
         max-width: 140%;
         object-fit: cover;
     
+    }
+
+    .styleImages {
+
+        flex: 0 1 30%;
+
+    }
+
+    #styles3 {
+
+        margin-bottom: 0;
+
+    }
+
+    #popularBrands {
+
+        margin: 0 0 32px 0;
+
+    }
+
+    #siteMap article {
+
+        display: block;
+
+    }
+
+    #siteMap article div {
+
+        padding: 8px;
+
+    }
+
+    #siteMap #countrySelect {
+
+        border-top: 1px solid #cccccc;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        /* margin: 0; */
+
     }
 
 }
@@ -641,6 +1026,25 @@ header nav li a:hover svg {
 
     }
 
+
+    .styleImages {
+
+        flex: 0 1 45%;
+
+    }
+
+    #socialsPartners {
+
+        display: none;
+    
+    }
+
+    #siteMap {
+
+        display: none;
+
+    }
+
 }
 
 
@@ -655,6 +1059,12 @@ header nav li a:hover svg {
     #logo {
 
         height: 16px;
+
+    }
+
+    .styleImages {
+
+        flex: 0 1 100%;
 
     }
 
