@@ -19,7 +19,7 @@ html {
 
 body {
 
-    width: 100%;
+    width: 100%
 
 }
 
@@ -203,7 +203,7 @@ header svg {
 #accDropdown {
 
     top: 64px;
-    transform: translateX(-60%);
+    /* transform: translateX(-15%); */
     width: 225px;
     background-color: rgba(237, 237, 237, .9);
     list-style-type: none;
@@ -211,6 +211,7 @@ header svg {
     border: 2px solid rgba(31, 31, 31, .9);
     border-top: none;
     display: none;
+    z-index: 90;
 
 }
 
@@ -270,6 +271,14 @@ header nav li a:hover svg {
 #menuButton {
 
     margin-right: 20px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+#menuButton:active {
+
+    transform: scale(.8);
 
 }
 
@@ -954,6 +963,17 @@ header nav li a:hover svg {
 }
 
 
+@media only screen and (max-width: 1150px) {
+
+    #accDropdown {
+
+        right: 0;
+
+    }
+
+}
+
+
 @media only screen and (max-width: 900px) {
 
     .desktopLinks {
@@ -1023,7 +1043,6 @@ header nav li a:hover svg {
         padding: 0;
         text-align: center;
         width: 90%;
-        /* margin: 0; */
 
     }
 
@@ -1077,6 +1096,12 @@ header nav li a:hover svg {
 
         display: none;
 
+    }
+
+    #accDropdown {
+
+        top: 48px;
+    
     }
 
     .mobileLinks {
