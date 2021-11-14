@@ -200,6 +200,25 @@ header svg {
 
 }
 
+#openSearch {
+
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+#openSearch:hover {
+
+    transform: scale(1.2);
+
+}
+
+#openSearch:active {
+
+    transform: scale(.8);
+
+}
+
 #accDropdown {
 
     top: 64px;
@@ -273,6 +292,12 @@ header nav li a:hover svg {
     margin-right: 20px;
     cursor: pointer;
     transition: .2s;
+
+}
+
+#menuButton:hover {
+
+    transform: scale(1.2);
 
 }
 
