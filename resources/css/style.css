@@ -327,13 +327,16 @@ header nav li a:hover svg {
     height: 100%;
     background-color: #dddddd;
     overflow-y: auto;
-
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .menuNav {
 
     background-color: #f1f1f1;
     height: 80px;
+    width: 288px;
     display: flex;
     align-items: center;
     padding: 0px 24px;
@@ -341,14 +344,46 @@ header nav li a:hover svg {
 
 }
 
+.menuNavCols {
+
+    background-color: #f1f1f1;
+    height: 80px;
+    width: 128px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 12px;
+    margin: 0 16px 16px 16px;
+    text-align: center;
+
+}
+
+.menuNavCols h6 {
+
+    font-size: 12px;
+
+}
+
 .menuHeading {
 
     background-color: #eeeeee;
     height: 64px;
+    width: 320px;
     display: flex;
     align-items: center;
     padding: 0px 24px;
     margin: 0 0 16px 0;
+
+}
+
+.menuSocial {
+
+    justify-content: space-evenly;
+
+}
+
+.menuSocial svg {
+
+    fill: #1f1f1f;
 
 }
 
@@ -363,6 +398,58 @@ header nav li a:hover svg {
 #menu a {
 
     display: block;
+
+}
+
+#menuBg nav {
+
+    width: 320px;
+    margin: 4px 16px;
+
+}
+
+#menuBg nav figure {
+
+    width: 288px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+}
+
+#menuBg nav figure img {
+
+    margin-right: 12px;
+
+}
+
+#menuMore {
+
+    margin: 16px 0;
+
+}
+
+#menuMore a {
+
+    display: block;
+    width: 320px;
+    padding: 8px 12px;
+    background-color: #eeeeee;
+    border-top: 1px solid #cccccc;
+
+}
+
+#menuMore .bottom {
+
+    border-bottom: 1px solid #cccccc;
+
+}
+
+#menuBg ul {
+
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
 
 }
 
@@ -392,6 +479,8 @@ header nav li a:hover svg {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    width: 100%;
+    padding: 0px 16px;
 
 }
 
@@ -972,7 +1061,7 @@ header nav li a:hover svg {
 
 }
 
-#country {
+.country {
 
     height: .8rem;
     margin: 0 4px;
