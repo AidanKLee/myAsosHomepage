@@ -327,7 +327,9 @@ header nav li a:hover svg {
     height: 100%;
     background-color: #dddddd;
     overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     
 }
@@ -344,11 +346,19 @@ header nav li a:hover svg {
 
 }
 
+#navColsWrapper {
+
+    width: 302px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 .menuNavCols {
 
     background-color: #f1f1f1;
     height: 80px;
-    width: 128px;
+    width: 119px;
     display: inline-flex;
     align-items: center;
     padding: 0px 12px;
